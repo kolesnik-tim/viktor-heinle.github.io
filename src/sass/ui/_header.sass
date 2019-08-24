@@ -1,31 +1,69 @@
 .header
-  .menu-open
-    position: absolute
-    left: 20px
-    top: 65px
-    width: 30px
-    height: 30px
-    display: none
-    z-index: 99
-    +r(1100)
-      display: block
-    +r(767)
-      top: 55%
-      transform: translate(0, -50%)
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  padding: 40px 0
+  // .menu-open
+  //   position: absolute
+  //   left: 20px
+  //   top: 65px
+  //   width: 30px
+  //   height: 30px
+  //   display: none
+  //   z-index: 99
+  //   +r(1100)
+  //     display: block
+  //   +r(767)
+  //     top: 55%
+  //     transform: translate(0, -50%)
+  //   span
+  //     width: 30px
+  //     height: 2px
+  //     margin-top: 10px
+  //     background: $white
+  //     display: block
+  //     &:before, &:after
+  //       content: ''
+  //       width: 30px
+  //       height: 2px
+  //       background: $white
+  //       position: absolute
+  //       left: 0
+  //     &:before
+  //       top: 0
+  //     &:after
+  //       bottom: 8px
+  &__logo
     span
-      width: 30px
-      height: 2px
-      margin-top: 10px
-      background: $white
+      font-family: 'Ailerons'
+      font-size: 27px
+      font-weight: normal
+      line-height: 1.19
+      color: #fdfdfd
+  &__nav
+    display: flex
+    justify-content: flex-end
+    ul
+      display: flex
+      a
+        font-size: 12px
+        font-weight: bold
+        line-height: 1.25
+        color: #fdfdfd
+        padding: 10px 20px
+        text-transform: uppercase
+  &__social
+    display: flex
+    align-items: center
+    margin-left: 70px
+    a
+      color: #fdfdfd
+      font-size: 16px
       display: block
-      &:before, &:after
-        content: ''
-        width: 30px
-        height: 2px
-        background: $white
-        position: absolute
-        left: 0
-      &:before
-        top: 0
-      &:after
-        bottom: 8px
+      padding: 5px 10px
+      i
+        display: block
+        width: 16px
+      &:first-child
+        font-size: 11px

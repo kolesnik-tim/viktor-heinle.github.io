@@ -9,7 +9,14 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-burger: "\EA01";
+$icon-facebook: "\EA02";
+$icon-instagram: "\EA03";
+$icon-linkedin: "\EA04";
+$icon-marker: "\EA05";
+$icon-music: "\EA06";
+$icon-pink: "\EA07";
+$icon-youtube: "\EA08";
 
 
 %icon {
@@ -28,4 +35,11 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
+.icon-burger:before { content: $icon-burger; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-linkedin:before { content: $icon-linkedin; }
+.icon-marker:before { content: $icon-marker; }
+.icon-music:before { content: $icon-music; }
+.icon-pink:before { content: $icon-pink; }
+.icon-youtube:before { content: $icon-youtube; }

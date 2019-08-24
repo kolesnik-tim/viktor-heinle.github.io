@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Iconfont Preview</title>
+  <style type="text/css" media="all">
+    @font-face {
+      font-family: "iconfont";
+      src: url('fonts/iconfont.eot');
+      src: url('fonts/iconfont.eot?#iefix') format('eot'),
+        url('fonts/iconfont.woff2') format('woff2'),
+        url('fonts/iconfont.woff') format('woff'),
+        url('fonts/iconfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .icons-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+    }
+
+    .icon-box {
+      display: inline-block;
+      vertical-align: middle;
+      min-width: 200px;
+      min-height: 200px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .icon-container {
+      min-height: 170px;
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    input:not([type=range]) {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 12px;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0;
+      text-align: center;
+      border: 1px solid #CCC;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+    }
+
+    input[type=range] {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .icon-class-name {
+      width: 70%;
+    }
+
+    .icon-unicode {
+      width: 30%;
+    }
+
+    .icon {
+      font-family: "iconfont";
+      display: inline-block;
+      vertical-align: middle;
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: auto;
+      speak: none;
+      min-width: 1em;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .icon-burger:before {
+      content: "\EA01";
+    }
+    .icon-facebook:before {
+      content: "\EA02";
+    }
+    .icon-instagram:before {
+      content: "\EA03";
+    }
+    .icon-linkedin:before {
+      content: "\EA04";
+    }
+    .icon-marker:before {
+      content: "\EA05";
+    }
+    .icon-music:before {
+      content: "\EA06";
+    }
+    .icon-pink:before {
+      content: "\EA07";
+    }
+    .icon-youtube:before {
+      content: "\EA08";
+    }
+  </style>
+</head>
+<body>
+  <h1>Icons: <span id="count"></span></h1>
+
+  <label style="display: block; width: 300px; margin: 20px auto;">
+    Icon size <output for="size" id="size-value">100</output>
+    <input type="range" id="size" value="100" min="6" max="1000">
+  </label>
+
+  <ul class="icons-list">
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-burger" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
+      <div class="icon-container">
+        <i class="icon icon-burger"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-facebook" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+      <div class="icon-container">
+        <i class="icon icon-facebook"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-instagram" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
+      <div class="icon-container">
+        <i class="icon icon-instagram"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-linkedin" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA04" readonly>
+      <div class="icon-container">
+        <i class="icon icon-linkedin"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-marker" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA05" readonly>
+      <div class="icon-container">
+        <i class="icon icon-marker"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-music" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA06" readonly>
+      <div class="icon-container">
+        <i class="icon icon-music"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-pink" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA07" readonly>
+      <div class="icon-container">
+        <i class="icon icon-pink"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-youtube" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA08" readonly>
+      <div class="icon-container">
+        <i class="icon icon-youtube"></i>
+      </div>
+    </li>
+    
+  </ul>
+
+  <script>
+    var change = document.getElementById('size');
+    var changeVal = document.getElementById('size-value');
+    var count = document.getElementById('count');
+    var autoselect = document.getElementsByClassName('autoselect');
+    var icons = document.getElementsByClassName('icon');
+    Array.prototype.forEach.call(autoselect, function(el) {
+      el.onclick = function() {
+        this.focus();
+        this.select();
+      };
+    });
+    change.oninput = function() {
+      var val = this.value;
+      changeVal.value = val;
+      Array.prototype.forEach.call(icons, function(el) {
+        el.style.fontSize = val + 'px';
+      });
+    }
+    count.innerHTML = icons.length;
+  </script>
+</body>
+</html>

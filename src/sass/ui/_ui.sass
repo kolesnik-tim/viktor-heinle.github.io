@@ -1,15 +1,20 @@
 html
 body
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Montserrat', sans-serif
   font-size: 18px
   box-sizing: border-box
   position: relative
 .container
   width: 100% !important
-  max-width: 1165px
+  max-width: 1160px
   box-sizing: border-box
   +r(1200)
     padding: 0 15px
+@font-face
+  font-family: 'Ailerons'
+  src: url('../fonts/Ailerons-Regular.woff2') format('woff2'), url('../fonts/Ailerons-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
 a
   text-decoration: none
   transition: all 0.3s
@@ -31,3 +36,18 @@ textarea
 		display: none !important
 
 
+.btn
+  padding: 15px 40px
+  display: block
+  border-radius: 28px
+  font-size: 12px
+  font-weight: bold
+  line-height: 1.25
+  &-primary
+    border: solid 2px #131313
+    color: #131313
+  &-secondary
+    background-color: #fdfdfd
+    color: #131313
+    letter-spacing: 1.2px
+    text-transform: uppercase

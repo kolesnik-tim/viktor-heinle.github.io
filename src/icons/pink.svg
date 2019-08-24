@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+    <defs>
+        <style>
+            .cls-1{fill:#bebebe}
+        </style>
+    </defs>
+    <path id="dot-circle-regular" d="M13 8.968A4.032 4.032 0 1 1 8.968 13 4.03 4.03 0 0 1 13 8.968M13 8a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 3.387A1.613 1.613 0 1 0 14.613 13 1.613 1.613 0 0 0 13 11.387z" class="cls-1" transform="translate(-8 -8)"/>
+</svg>

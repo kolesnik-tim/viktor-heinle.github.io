@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="10" viewBox="0 0 7.5 10">
+    <defs>
+        <style>
+            .cls-1{fill:#bebebe}
+        </style>
+    </defs>
+    <path id="map-marker-solid" d="M3.365 9.8C.527 5.684 0 5.262 0 3.75a3.75 3.75 0 0 1 7.5 0c0 1.512-.527 1.934-3.365 6.048a.469.469 0 0 1-.771 0z" class="cls-1"/>
+</svg>

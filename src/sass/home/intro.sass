@@ -1,1 +1,51 @@
 .intro
+  background-image: url('../img/intro-bg.jpg')
+  +cover
+  height: 1080px
+  +center
+  &__content
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    h1
+      font-family: 'Ailerons'
+      font-weight: normal
+      font-size: 89px
+      line-height: 1.2
+      text-align: right
+      color: #c2c8b8
+      text-transform: uppercase
+    p
+      font-size: 16px
+      font-weight: 500
+      line-height: 1.19
+      color: #c2c8b8
+      text-transform: uppercase
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      margin-top: 8px
+      &:before, &:after
+        content: ''
+        width: 95px
+        height: 1px
+        background: #dedede
+        display: block
+      &:before
+        margin-right: 20px
+      &:after
+        margin-left: 20px
+  &__btn
+    position: relative
+    top: 220px
+    display: flex
+    align-items: center
+    a:first-child
+      font-size: 12px
+      font-weight: normal
+      line-height: 1.25
+      letter-spacing: 1.2px
+      color: #fdfdfd
+      text-decoration: underline
+      margin-right: 40px

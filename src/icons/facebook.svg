@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:#fdfdfd}
+        </style>
+    </defs>
+    <path id="facebook-square-brands" d="M14.286 32H1.714A1.714 1.714 0 0 0 0 33.714v12.572A1.714 1.714 0 0 0 1.714 48h4.9v-5.44H4.366V40h2.25v-1.951A3.125 3.125 0 0 1 9.961 34.6a13.631 13.631 0 0 1 1.983.173v2.179h-1.117a1.28 1.28 0 0 0-1.444 1.383V40h2.457l-.393 2.56H9.384V48h4.9A1.714 1.714 0 0 0 16 46.286V33.714A1.714 1.714 0 0 0 14.286 32z" class="cls-1" transform="translate(0 -32)"/>
+</svg>

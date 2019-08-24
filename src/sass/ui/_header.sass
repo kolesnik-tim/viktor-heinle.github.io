@@ -1,0 +1,31 @@
+.header
+  .menu-open
+    position: absolute
+    left: 20px
+    top: 65px
+    width: 30px
+    height: 30px
+    display: none
+    z-index: 99
+    +r(1100)
+      display: block
+    +r(767)
+      top: 55%
+      transform: translate(0, -50%)
+    span
+      width: 30px
+      height: 2px
+      margin-top: 10px
+      background: $white
+      display: block
+      &:before, &:after
+        content: ''
+        width: 30px
+        height: 2px
+        background: $white
+        position: absolute
+        left: 0
+      &:before
+        top: 0
+      &:after
+        bottom: 8px

@@ -1,0 +1,74 @@
+.service
+  padding: 70px 0
+  &__content
+    background-color: #fdfdfd
+    display: flex
+  &__block
+    padding: 35px
+    width: 100%
+    &:first-child
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translate(0, -50%)
+        background: #eeeeee
+        width: 1px
+        height: calc(100% - 70px)
+    &:last-child
+      background-color: #eeeeee
+    h3
+      font-size: 14px
+      font-weight: 500
+      line-height: 1.29
+      letter-spacing: 1.4px
+      color: #131313
+      max-width: 285px
+      text-transform: uppercase
+      margin-bottom: 25px
+      min-height: 55px
+    li
+      font-size: 14px
+      font-weight: normal
+      line-height: 1.29
+      letter-spacing: 1.4px
+      color: #131313
+      margin-bottom: 15px
+      display: flex
+      max-width: 245px
+      i
+        color: #bebebe
+        font-size: 10px
+        margin-right: 10px
+        margin-top: 4px
+    &__price
+      padding: 40px 0 20px
+      border-bottom: 1px solid #fdfdfd
+      &:last-child
+        border-bottom: none
+      h4
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.29
+        letter-spacing: 1.4px
+        color: #131313
+        margin-bottom: 8px
+      strong
+        font-size: 18px
+        font-weight: bold
+        line-height: 1
+        letter-spacing: 1.8px
+        color: #131313
+        span
+          font-size: 14px
+          font-weight: normal
+          letter-spacing: 1.4px
+      p
+        font-size: 14px
+        font-weight: normal
+        line-height: 1.29
+        letter-spacing: 1.4px
+        color: #131313
+        margin-bottom: 5px

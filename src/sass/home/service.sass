@@ -1,15 +1,21 @@
 .service
   padding: 70px 0
+  +r(767)
+    padding: 30px 0
   &__content
     background-color: #fdfdfd
     display: flex
     +r(767)
       flex-direction: column
+      padding: 0 15px
   &__block
     padding: 35px
     width: 100%
     +r(1040)
       padding: 20px
+    +r(767)
+      border-bottom: 1px solid #eeeeee
+      padding: 20px 0
     &:first-child
       position: relative
       &:before
@@ -21,8 +27,22 @@
         background: #eeeeee
         width: 1px
         height: calc(100% - 70px)
+        +r(767)
+          display: none
     &:last-child
       background-color: #eeeeee
+    &--secondary
+      +r(767)
+        border-top: 1px solid #eeeeee
+        margin-top: 30px
+        padding-top: 30px
+        h3
+          margin-top: 0 !important
+    &--primary 
+      +r(767)
+        padding: 20px
+        width: calc(100% + 30px)
+        margin-left: -15px
     h3
       font-size: 14px
       font-weight: 500
@@ -33,6 +53,8 @@
       text-transform: uppercase
       margin-bottom: 25px
       min-height: 55px
+      +r(767)
+        min-height: auto
     li
       font-size: 14px
       font-weight: normal

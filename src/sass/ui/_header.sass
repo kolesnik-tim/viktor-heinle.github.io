@@ -4,43 +4,38 @@
   left: 0
   width: 100%
   padding: 40px 0
-  // .menu-open
-  //   position: absolute
-  //   left: 20px
-  //   top: 65px
-  //   width: 30px
-  //   height: 30px
-  //   display: none
-  //   z-index: 99
-  //   +r(1100)
-  //     display: block
-  //   +r(767)
-  //     top: 55%
-  //     transform: translate(0, -50%)
-  //   span
-  //     width: 30px
-  //     height: 2px
-  //     margin-top: 10px
-  //     background: $white
-  //     display: block
-  //     &:before, &:after
-  //       content: ''
-  //       width: 30px
-  //       height: 2px
-  //       background: $white
-  //       position: absolute
-  //       left: 0
-  //     &:before
-  //       top: 0
-  //     &:after
-  //       bottom: 8px
+  +r(767)
+    padding: 40px 15px
+    z-index: 99
+    .container
+      padding: 0 15px
+  +r(470)
+    padding: 40px 0
+  .open-menu
+    display: none
+    +r(767)
+      display: block
+      i
+        font-size: 14px
+        color: #fdfdfd
+        margin-top: 8px
+        margin-right: 0.8em
   &__logo
+    +r(767)
+      display: flex
+      align-items: center
+      position: relative
     span
       font-family: 'Ailerons'
       font-size: 27px
       font-weight: normal
       line-height: 1.19
       color: #fdfdfd
+      +r(470)
+        font-size: 20px
+        width: 200px
+        position: absolute
+        left: 25px
   &__nav
     display: flex
     justify-content: flex-end
@@ -59,6 +54,9 @@
         color: #fdfdfd
         padding: 10px 20px
         text-transform: uppercase
+        &:hover
+          text-decoration: underline
+          color: #c2c8b8
         +r(1040)
           padding: 10px 15px
   &__social
@@ -72,8 +70,62 @@
       font-size: 16px
       display: block
       padding: 5px 10px
+      &:hover
+        color: #c2c8b8
+      +r(470)
+        padding: 5px
       i
         display: block
         width: 16px
       &:first-child
         font-size: 11px
+
+
+
+
+.bg
+  width: 100%
+  height: 100%
+  background: rgba($black, 0.6)
+  z-index: 998
+  position: fixed
+  left: 0
+  top: 0
+  display: none
+.mobile-menu
+  position: fixed
+  left: -100%
+  top: 0
+  width: 270px
+  background: $white
+  z-index: 999
+  height: 100%
+  transition: all 0.7s
+  &.active
+    left: 0
+  .close-menu
+    position: absolute
+    right: 15px
+    top: 15px
+    width: 30px
+    height: 30px
+    +center
+  span
+    font-family: 'Ailerons'
+    font-size: 27px
+    font-weight: normal
+    line-height: 1.19
+    color: #000
+    display: block
+    padding: 20px
+    padding-top: 60px
+    text-align: center
+  ul
+    padding: 20px
+  a
+    font-size: 14px
+    font-weight: bold
+    line-height: 3
+    color: #000
+    padding: 10px 20px
+    text-transform: uppercase

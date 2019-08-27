@@ -9,7 +9,7 @@ body
   max-width: 1160px
   box-sizing: border-box
   +r(1200)
-    padding: 0 15px
+    padding: 0 30px
 @font-face
   font-family: 'Ailerons'
   src: url('../fonts/Ailerons-Regular.woff2') format('woff2'), url('../fonts/Ailerons-Regular.woff') format('woff')
@@ -44,14 +44,21 @@ textarea
   font-size: 12px
   font-weight: bold
   line-height: 1.25
+  +tr
   i
     font-size: 20px
     margin-right: 25px
   &-primary
     border: solid 2px #131313
     color: #131313
+    &:hover
+      background: #131313
+      color: $white
   &-secondary
     background-color: #fdfdfd
     color: #131313
     letter-spacing: 1.2px
     text-transform: uppercase
+    &:hover
+      background: rgba($white, 0.5)
+      color: #fdfdfd

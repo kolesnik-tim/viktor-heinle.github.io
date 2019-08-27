@@ -1,14 +1,21 @@
-import '../lib/selectize.min.js';
-// import '../lib/maskedinput.js';
-// import modal from 'jquery-modal';
+//якорь
+$('.header__nav, .mobile-menu, .intro__btn').on('click','a', function(event) {
 
-//select
-// $('select').selectize();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+  $('.mobile-menu').removeClass('active');
+  $('.bg').fadeOut();
+});
 
-// //pop-up
-// $('[rel="modal:open"]').on('click', function(event) {
-//   $(this).modal({
-//     fadeDuration: 200
-//   });
-//   return false;
-// });
+
+//mobile menu
+$('.open-menu').on('click', function() {
+  $('.mobile-menu').addClass('active');
+  $('.bg').fadeIn();
+});
+//close
+$('.close-menu, .bg').on('click', function() {
+  $('.mobile-menu').removeClass('active');
+  $('.bg').fadeOut();
+});

@@ -10,13 +10,14 @@
 }
 
 $icon-burger: "\EA01";
-$icon-facebook: "\EA02";
-$icon-instagram: "\EA03";
-$icon-linkedin: "\EA04";
-$icon-marker: "\EA05";
-$icon-music: "\EA06";
-$icon-pink: "\EA07";
-$icon-youtube: "\EA08";
+$icon-close-2: "\EA02";
+$icon-facebook: "\EA03";
+$icon-instagram: "\EA04";
+$icon-linkedin: "\EA05";
+$icon-marker: "\EA06";
+$icon-music: "\EA07";
+$icon-pink: "\EA08";
+$icon-youtube: "\EA09";
 
 
 %icon {
@@ -36,6 +37,7 @@ $icon-youtube: "\EA08";
 }
 
 .icon-burger:before { content: $icon-burger; }
+.icon-close-2:before { content: $icon-close-2; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-linkedin:before { content: $icon-linkedin; }

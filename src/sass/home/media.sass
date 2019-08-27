@@ -1,6 +1,8 @@
 .media
   padding: 80px 0
   background-image: linear-gradient(135deg, #ffffff, #f8f8f8)
+  +r(767)
+    padding: 30px 0
   &__content
     display: grid
     grid-template-columns: repeat(auto-fill, minmax(365px, auto))
@@ -8,9 +10,13 @@
     grid-auto-rows: minmax(367px, auto)
     grid-auto-flow: dense
     +r(767)
-      grid-template-columns: repeat(auto-fill, minmax(205px, auto))
+      grid-template-columns: repeat(auto-fill, minmax(200px, auto))
       grid-gap: 15px
       grid-auto-rows: minmax(205px, auto)
+    +r(470)
+      grid-template-columns: repeat(auto-fill, minmax(105px, auto))
+      grid-gap: 15px
+      grid-auto-rows: minmax(105px, auto)
   &__block
     overflow: hidden
     +center
@@ -31,6 +37,8 @@
           transform: translate(-50%, -50%) scale(1.1)
         svg
           width: 133px
+          +r(767)
+            width: 78px
   .span-1
     grid-column-end: span 2
     grid-row-end: span 1
@@ -40,9 +48,20 @@
   &__btn
     +center
     margin-top: 75px
+    +r(767)
+      margin-top: 30px
     a
       text-transform: uppercase
+      +r(767)
+        padding: 16px 24px
+      +r(470)
+        padding: 12px 8px
+        font-size: 10px
+        i
+          margin-right: 5px
       &:first-child
         margin-right: 38px
+        +r(767)
+          margin-right: 15px
         i
           font-size: 14px

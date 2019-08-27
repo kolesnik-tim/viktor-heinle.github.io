@@ -1,5 +1,7 @@
 .footer
   padding: 20px 0 145px
+  position: relative
+  padding: 20px 0 115px
   &__logo
     h4
       font-family: 'Ailerons'
@@ -39,13 +41,16 @@
     align-items: center
     padding-bottom: 40px
     border-bottom: solid 1px #eeeeee
-
+    +r(767)
+      border-bottom: none
     a
       color: #bebebe
       font-size: 32px
       display: block
       padding: 5px 10px
       margin-right: 23px
+      &:hover
+        color: $black
       i
         display: block
         width: 16px
@@ -53,6 +58,14 @@
         font-size: 22px
   &__copyright
     padding-top: 35px
+    +r(767)
+      position: absolute
+      bottom: 0
+      width: calc(100% - 40px)
+      left: 20px
+      padding: 15px 0 
+      +center
+      border-top: solid 1px #eeeeee
     p
       font-size: 14px
       font-weight: normal
@@ -65,12 +78,16 @@
   &__form
     &__row
       display: flex
+      +r(767)
+        flex-direction: column
       .footer__form__input
         &:first-child
           margin-right: 15px
     &__input
       width: 100%
       margin-bottom: 24px
+      +r(767)
+        margin-bottom: 15px
     strong
       font-size: 11px
       font-weight: bold

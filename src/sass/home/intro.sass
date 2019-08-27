@@ -3,10 +3,25 @@
   +cover
   height: 1080px
   +center
+  +r(1040)
+    background-position: 25% 0
+  +r(767)
+    height: 850px
+    background-position: 25% 0
+    position: relative
   &__content
     display: flex
     align-items: flex-end
     flex-direction: column
+    +r(767)
+      align-items: center
+  &__logo
+    +r(767)
+      width: 291px
+      background-color: #131313
+      padding: 17px
+      position: relative
+      top: 80px
     h1
       font-family: 'Ailerons'
       font-weight: normal
@@ -15,6 +30,9 @@
       text-align: right
       color: #c2c8b8
       text-transform: uppercase
+      +r(767)
+        font-size: 77px
+        line-height: 1.1
     p
       font-size: 16px
       font-weight: 500
@@ -26,12 +44,21 @@
       align-items: center
       justify-content: flex-end
       margin-top: 8px
+      +r(767)
+        font-size: 14px
+        max-width: 195px
+        text-align: center
+        position: relative
+        left: 50%
+        transform: translate(-50%)
       &:before, &:after
         content: ''
         width: 95px
         height: 1px
         background: #dedede
         display: block
+        +r(767)
+          display: none
       &:before
         margin-right: 20px
       &:after
@@ -41,6 +68,15 @@
     top: 220px
     display: flex
     align-items: center
+    +r(767)
+      position: absolute
+      bottom: 0px
+      width: 100%
+      padding: 37px 0
+      background: rgba(#131313, 0.75)
+      top: auto
+      flex-direction: column-reverse
+      align-items: center
     a:first-child
       font-size: 12px
       font-weight: normal
@@ -49,3 +85,6 @@
       color: #fdfdfd
       text-decoration: underline
       margin-right: 40px
+      +r(767)
+        margin-right: 0
+        margin-top: 15px

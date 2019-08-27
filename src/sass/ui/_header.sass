@@ -44,6 +44,12 @@
   &__nav
     display: flex
     justify-content: flex-end
+    height: 100%
+    nav
+      display: flex
+      align-items: center
+      +r(767)
+        display: none
     ul
       display: flex
       a
@@ -53,10 +59,14 @@
         color: #fdfdfd
         padding: 10px 20px
         text-transform: uppercase
+        +r(1040)
+          padding: 10px 15px
   &__social
     display: flex
     align-items: center
     margin-left: 70px
+    +r(1040)
+      margin-left: 15px
     a
       color: #fdfdfd
       font-size: 16px

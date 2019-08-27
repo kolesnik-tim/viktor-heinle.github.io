@@ -1,1 +1,95 @@
 .footer
+  padding: 20px 0 145px
+  &__logo
+    h4
+      font-family: 'Ailerons'
+      font-size: 27px
+      font-weight: normal
+      line-height: 1.19
+      color: #131313
+      margin-bottom: 30px
+  &__relations
+    padding-bottom: 30px
+    p
+      font-size: 14px
+      font-weight: normal
+      line-height: 1.29
+      letter-spacing: 1.4px
+      color: #131313
+      margin-bottom: 15px
+      a
+        text-decoration: underline
+        color: #131313
+    b
+      font-weight: bold
+      font-size: 14px
+      line-height: 1.29
+      color: #131313
+      display: block
+      margin-bottom: 15px
+      a
+        text-decoration: underline
+        font-size: 14px
+        font-weight: normal
+        line-height: 1.29
+        letter-spacing: 1.4px
+        color: #131313
+  &__social
+    display: flex
+    align-items: center
+    padding-bottom: 40px
+    border-bottom: solid 1px #eeeeee
+
+    a
+      color: #bebebe
+      font-size: 32px
+      display: block
+      padding: 5px 10px
+      margin-right: 23px
+      i
+        display: block
+        width: 16px
+      &:first-child
+        font-size: 22px
+  &__copyright
+    padding-top: 35px
+    p
+      font-size: 14px
+      font-weight: normal
+      line-height: 1.29
+      letter-spacing: 1.4px
+      color: #131313
+      a
+        text-decoration: underline
+        color: #131313
+  &__form
+    &__row
+      display: flex
+      .footer__form__input
+        &:first-child
+          margin-right: 15px
+    &__input
+      width: 100%
+      margin-bottom: 24px
+    strong
+      font-size: 11px
+      font-weight: bold
+      line-height: 1.27
+      letter-spacing: 1.1px
+      color: #131313
+      display: block
+      margin-bottom: 5px
+      padding-left: 15px
+      text-transform: uppercase
+    input, textarea
+      border-radius: 23px
+      border: solid 1px #eeeeee
+      background-color: #f8f8f8
+      padding: 14px 17px
+      +placeholder-color(#bebebe)
+      width: 100%
+      color: $black
+    textarea
+      height: 190px
+    button
+      background: none

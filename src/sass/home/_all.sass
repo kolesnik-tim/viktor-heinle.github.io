@@ -2,3 +2,20 @@
 @import portrait
 @import media
 @import service
+
+
+@media all and (-ms-high-contrast:none)
+  .media__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .media__block
+    margin-bottom: 30px
+  *::-ms-backdrop, .media__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .media__block
+    margin-bottom: 30px
+  .intro .container
+    margin: 0

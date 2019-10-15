@@ -14,9 +14,9 @@
       grid-gap: 15px
       grid-auto-rows: minmax(205px, auto)
     +r(470)
-      grid-template-columns: repeat(auto-fill, minmax(105px, auto))
-      grid-gap: 15px
-      grid-auto-rows: minmax(105px, auto)
+      grid-template-columns: repeat(auto-fill, minmax(105px, auto)) !important
+      grid-gap: 15px !important
+      grid-auto-rows: minmax(105px, auto) !important
   &__block
     overflow: hidden
     +center
@@ -65,21 +65,3 @@
           margin-right: 15px
         i
           font-size: 14px
-
-@media all and (-ms-high-contrast:none)
-  .media__content
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-  .media__block
-    margin-bottom: 30px
-  *::-ms-backdrop, .media__content
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-  .media__block
-    margin-bottom: 30px
-  .intro .container
-    margin: 0
-  .service__block li
-    display: block

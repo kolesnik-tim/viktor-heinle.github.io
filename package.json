@@ -62,7 +62,7 @@
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-glsl-loader": "^1.0.1",
     "require-yaml": "^0.0.1",
-    "lodash": "^4.3.0"
+    "lodash": "^4.17.21"
   },
   "dependencies": {
     "object-fit-images": "^3.2.4"
